@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup"
+    android:layout_width="350dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:background="@drawable/circulpopupbackground"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/popup_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="#FFF"
+        android:textSize="45sp"/>
+
+    <LinearLayout
+        android:id="@+id/edit_text_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popup_title"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/kg_per_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Username "
+            android:textColor="#FFF"
+            android:textSize="25sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etplayerusername"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/border_button"
+            android:backgroundTint="@color/colorAccent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text=" Password "
+            android:textColor="#FFF"
+            android:textSize="25sp"/>
+
+        <EditText
+            android:id="@+id/etplayerpassword"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:background="@drawable/border_button"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_box"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/player_signin_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/circulpopupbackground"
+            android:onClick="onClick"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/confirm_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circulpopupbackground"
+            android:onClick="signInAsplayer"
+            android:text="Sign-in"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Fragment_pro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="Fragment_pro"
+    tools:context=".ui.allFragment.FragmentProgram">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:layout_marginTop="15dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:foregroundGravity="top"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+
+            android:text="Exercises Program"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+
+
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/la"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/programe"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:gravity="bottom|center"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:orientation="vertical"
+
+
+                >
+
+                <ImageButton
+                    android:id="@+id/img_fit"
+                    android:layout_width="170dp"
+                    android:layout_height="42dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/asd"
+                    android:clickable="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/fiting" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:text="gain weight"
+                    android:textAlignment="gravity"
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                >
+
+                <ImageButton
+                    android:id="@+id/img_slim"
+                    android:layout_width="170dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/asd"
+                    android:clickable="true"
+
+                    android:scaleType="centerInside"
+                    android:src="@drawable/slimming"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:text="lose weight"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
